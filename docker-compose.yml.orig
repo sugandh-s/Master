@@ -1,0 +1,16 @@
+mysql:
+  image: mysql:5.7
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=
+    - MYSQL_ALLOW_EMPTY_PASSWORD=true
+<<<<<<< HEAD
+    - MYSQL_USER=master_edit_newchanges
+=======
+    - MYSQL_USER=feat_2_edit
+>>>>>>> feat_2
+    - MYSQL_PASSWORD=petclinic
+    - MYSQL_DATABASE=petclinic
+  volumes:
+    - "./conf.d:/etc/mysql/conf.d:rw"
